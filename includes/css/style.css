@@ -1,0 +1,1141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+}
+
+@font-face {
+    font-family: iranianSans;
+    src: url(../../fonts/IranianSans.woff);
+}
+
+@font-face {
+    font-family: vazir-bold;
+    src: url(../../fonts/Vazir-Bold.woff);
+}
+
+@font-face {
+    font-family: yekan;
+    src: url(../../fonts/yekan.woff2);
+}
+
+@font-face {
+    font-family: vazir;
+    src: url(../../fonts/Vazir.woff);
+}
+
+@font-face {
+    font-family: parastoo;
+    src: url(../../fonts/Parastoo-Bold-FD-WOL.woff);
+}
+
+.iranianSans {
+    font-family: iranianSans !important;
+}
+
+.vazir-bold {
+    font-family: vazir-bold !important;
+}
+
+.yekan {
+    font-family: yekan !important;
+}
+
+.vazir {
+    font-family: vazir !important;
+}
+
+.parastoo {
+    font-family: parastoo !important;
+}
+
+.font-sans-serif {
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #F3F3F3;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.display {
+    display: block !important;
+}
+
+.opacity {
+    opacity: 1 !important;
+}
+
+.display-none {
+    display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* setting */
+.background-night {
+    background-color: #333 !important;
+}
+
+.color-white {
+    color: #fff;
+}
+
+/* mask */
+div.mask {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.466);
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 15;
+    display: none;
+}
+
+/* header */
+/* slide show */
+header div.slideshow {
+    width: 100%;
+    position: relative;
+}
+
+header div.slideshow div.cover {
+    width: 100%;
+}
+
+header div.slideshow div.primary {
+    width: 40%;
+    position: absolute;
+    top: 190px;
+    left: 70px;
+    text-align: center;
+
+}
+
+header div.slideshow div.caption-cover {
+    position: absolute !important;
+    top: 150px !important;
+    left: 360px !important;
+}
+
+header div.slideshow div.primary h2 {
+    font-size: 2rem;
+    color: #12463a;
+    font-family: iranianSans;
+    line-height: 70px;
+    cursor: pointer;
+}
+
+header div.slideshow div.poster {
+    display: none;
+}
+
+header div.slideshow div.caption {
+    display: none;
+}
+
+header div.slideshow div.before-after {
+    width: 96%;
+    font-size: 3rem;
+    position: absolute;
+    top: 50%;
+    right: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div.slideshow div.before-after i {
+    cursor: pointer;
+    color: #00211a;
+}
+
+header div.slideshow div.nav {
+    width: 96%;
+    height: 90px;
+    background-color: #fdfdfd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    right: 2%;
+    font-family: vazir-bold;
+    font-size: 14px;
+    padding: 0 30px;
+}
+
+header div.slideshow ul {
+    list-style: none;
+}
+
+header div.slideshow ul li {
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+header div.slideshow div.login-cart {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div.slideshow div.login-cart div.shopping a.icon {
+    margin-right: 15px;
+}
+
+header div.slideshow div.login-cart div.shopping a.icon i {
+    font-size: 20px;
+}
+
+div.number {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    background-color: #247061;
+    text-align: center;
+    border-radius: 50%;
+    transform: translate(10px, 10px);
+    color: #fff;
+    padding-top: 2px;
+    margin: auto;
+}
+
+header div.slideshow div.nav-md {
+    width: 100%;
+    height: 70px;
+    background-color: #fdfdfd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    font-family: vazir-bold;
+    padding: 0 30px;
+}
+
+header div.slideshow div.nav-md i {
+    font-size: 20px;
+}
+
+header div.slideshow div.dropdown {
+    width: 300px;
+    height: 100vh;
+    min-height: 500px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    z-index: 20;
+    box-shadow: -3px 5px 7px #0000003b;
+    transform: translateX(110%);
+    transition: .5s;
+}
+
+.show {
+    transform: translateX(0) !important;
+}
+
+header div.slideshow div.dropdown div.close {
+    padding: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+header div.slideshow div.dropdown div.close i {
+    font-size: 20px;
+}
+
+header div.slideshow div.dropdown input {
+    width: 96%;
+    height: 40px;
+    margin-right: 2%;
+    font-size: 16px;
+    font-family: vazir-bold;
+    border-radius: 5px;
+    padding: 0 10px;
+    outline-color: #247061;
+    border: 1px solid #999;
+
+}
+
+header div.slideshow div.dropdown ul.menu {
+    display: flex;
+    flex-direction: column;
+}
+
+header div.slideshow div.dropdown ul.menu li {
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #999;
+    padding: 15px;
+    font-size: 14px;
+    font-family: vazir-bold;
+}
+
+/* main content */
+/* navigation */
+div.main-content div.nav-bottom-md {
+    width: 100%;
+    height: 70px;
+    background-color: #f5f5f5;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+    align-items: flex-end;
+    justify-content: space-around;
+    display: none;
+    padding-bottom: 5px;
+}
+
+div.main-content div.nav-bottom-md a.icon {
+    text-align: center;
+}
+
+div.main-content div.nav-bottom-md a.icon span {
+    display: block;
+}
+
+/* product */
+div.main-content div.product div.title h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.5rem;
+    color: #12463a;
+}
+
+div.main-content div.product section {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.main-content div.product section div.card {
+    text-align: center;
+    position: relative;
+}
+
+div.main-content div.product section div.card:hover div.price {
+    color: #666;
+}
+
+div.main-content div.product section div.card:hover div.image-product div.button {
+    opacity: 1;
+    position: absolute;
+    right: 50%;
+    bottom: 70px;
+}
+
+div.main-content div.product section div.image-product a :nth-child(1) {
+    opacity: 0;
+    transition: .7s;
+}
+
+div.main-content div.product section div.card:hover div.image-product a img.second-img {
+    opacity: 0;
+}
+
+
+div.main-content div.product section div.card:hover div.image-product a :nth-child(1) {
+    opacity: 1;
+}
+
+div.main-content div.product section div.card div.image-product a {
+    overflow: hidden;
+    position: relative;
+}
+
+div.main-content div.product section div.card div.image-product a img.second-img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: .8s;
+}
+
+div.main-content div.product section div.card div.image-product div.button {
+    background-color: #fff;
+    width: 70%;
+    height: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    right: 50%;
+    bottom: 50px;
+    transform: translateX(50%);
+    opacity: 0;
+    transition: .5s;
+}
+
+div.main-content div.product section div.card div.image-product div.button svg {
+    cursor: pointer;
+}
+
+div.main-content div.product section div.card span {
+    font-size: 18px;
+    display: block;
+    color: #114639;
+}
+
+div.main-content div.product section div.card div.price {
+    font-size: 14px;
+    font-family: parastoo;
+    margin-top: 10px;
+    color: #114639;
+}
+
+/* advertising */
+div.main-content div.advertising {
+    width: 96%;
+    margin: 60px auto 0;
+    display: flex;
+}
+
+div.main-content div.advertising div.taking-orders {
+    width: 40%;
+    text-align: center;
+    position: relative;
+}
+
+div.main-content div.advertising div.taking-orders p.title {
+    font-size: 1.4rem;
+    font-family: vazir-bold;
+    color: #114639;
+    margin: 50px 0 20px;
+}
+
+div.main-content div.advertising div.taking-orders p.des {
+    font-size: 1.1rem;
+    font-family: yekan;
+    color: #666;
+}
+
+div.main-content div.advertising div.taking-orders span {
+    color: #114639;
+    font-size: 1.3rem;
+    font-family: vazir;
+    margin: 20px 0 40px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+div.main-content div.advertising div.taking-orders span::before {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #114639;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+div.main-content div.advertising div.order {
+    width: 60%;
+    max-height: 90vh;
+    overflow: auto;
+    background-color: #fdfdfd;
+    border-radius: 15px;
+    border: 1px solid #000;
+    position: fixed;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    z-index: 16;
+    display: none;
+}
+
+div.main-content div.advertising div.order div.close-order {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    border-bottom: 1px solid #666;
+    padding-bottom: 10px;
+}
+
+div.main-content div.advertising div.order div.close-order div.title-order {
+    color: #114639;
+    font-size: 18px;
+    font-family: vazir;
+}
+
+div.main-content div.advertising div.order div.close-order div.title-order h3 {
+    font-size: 1em;
+}
+
+div.main-content div.advertising div.order form {
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+    font-size: 18px;
+    font-family: yekan;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+div.main-content div.advertising div.order form div.input {
+    width: 300px;
+    height: 50px;
+    border: 1px solid #666;
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    background-color: #fdfdfd;
+}
+
+div.main-content div.advertising div.order form div.input label {
+    padding: 0 10px;
+    position: absolute;
+    top: -14px;
+    right: 15px;
+    background-color: #fdfdfd;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+div.main-content div.advertising div.order form div.input input,
+select {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 18px;
+    font-family: vazir;
+    outline: none;
+    border-radius: 15px;
+    background-color: #fdfdfd;
+}
+
+div.main-content div.advertising div.order form div.address {
+    width: 90%;
+    height: 100px;
+}
+
+div.main-content div.advertising div.order form div.submit {
+    background-color: #114639;
+    cursor: pointer;
+}
+
+div.main-content div.advertising div.order form div.submit input {
+    background-color: #114639;
+    color: #fff;
+    cursor: pointer;
+}
+
+div.main-content div.advertising div.taking-orders div.poster {
+    width: 60%;
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+div.main-content div.advertising div.taking-orders div.poster img {
+    display: block;
+    height: 100%;
+}
+
+div.main-content div.advertising {
+    margin-bottom: 50px;
+}
+
+div.main-content div.advertising div.find-us {
+    width: 60%;
+}
+
+div.main-content div.advertising div.find-us div.poster img {
+    display: block;
+    transition: .6s;
+}
+
+div.main-content div.advertising div.find-us div.poster:hover img {
+    transform: scale(1.1);
+}
+
+div.main-content div.advertising div.find-us div.poster {
+    height: 100%;
+    overflow: hidden;
+}
+
+div.main-content div.finely-coffee {
+    display: flex;
+}
+
+div.main-content div.finely-coffee div.poster {
+    width: 60%;
+}
+
+div.main-content div.finely-coffee div.caption-finely-coffee {
+    width: 35%;
+    margin-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+div.main-content div.finely-coffee div.caption-finely-coffee p.title {
+    color: #114639;
+    font-size: 1.5em;
+    font-family: vazir-bold;
+    margin-bottom: 20px;
+}
+
+div.main-content div.finely-coffee div.caption-finely-coffee p.des {
+    font-family: yekan;
+    font-size: .9em;
+    color: #666;
+    line-height: 30px;
+    margin-bottom: 25px;
+}
+
+div.main-content div.finely-coffee div.caption-finely-coffee div.btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+div.main-content div.finely-coffee div.caption-finely-coffee button {
+    width: 200px;
+    height: 35px;
+    border: 1px solid #114639;
+    text-align: center;
+    font-size: 1em;
+    font-family: vazir-bold;
+    color: #114639;
+    margin: 3px 0;
+}
+
+div.main-content div.finely-coffee div.caption-finely-coffee button:hover {
+    background-color: #114639;
+    color: #fdfdfd;
+}
+
+/* Second products */
+div.main-content div.product {
+    position: relative;
+}
+
+div.main-content div.Second-products section {
+    width: 94% !important;
+    overflow: hidden;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+div.main-content div.Second-products section div.card {
+    width: 240px;
+    display: inline-block;
+}
+
+div.main-content div.product div.btn-product .right {
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    color: #114639;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+div.main-content div.product div.btn-product .left {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #114639;
+    font-size: 2em;
+    cursor: pointer;
+}
+
+div.main-content div.rest {
+    width: 100% !important;
+}
+
+div.rest p {
+    width: 94%;
+    text-align: right;
+    padding-right: 30px;
+}
+
+div.rest p.des {
+    font-family: yekan !important;
+    font-size: .9em !important;
+    line-height: 24px !important;
+}
+
+div.rest div.taking-orders div.icon {
+    width: 25%;
+    position: absolute;
+    bottom: 30px;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+div.rest div.taking-orders div.icon img {
+    transition: .6s;
+    border-radius: 50%;
+    padding: 2px;
+}
+
+div.rest div.taking-orders div.icon img:hover {
+    transform: rotate(360deg);
+    border-top: 4px solid #f2ba2f;
+    border-bottom: 4px solid #f2ba2f;
+    border-right: 4px solid #114639;
+    border-left: 4px solid #114639;
+}
+
+/* newsletter */
+div.main-content div.newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.main-content div.newsletter div.newslatterform {
+    width: 60%;
+    padding: 20px;
+    margin: auto;
+    font-size: 1.4em;
+    color: #114639;
+}
+
+div.main-content div.newsletter div.newslatterform form {
+    text-align: center;
+    margin-top: 20px ;
+}
+
+div.main-content div.newsletter div.newslatterform form input {
+    width: 40%;
+    min-width: 200px;
+    height: 35px;
+    outline: #cacaca;
+    border: 1px solid #cacaca;
+    direction: ltr;
+    padding: 0 10px;
+    margin-top: 10px;
+
+}
+
+div.main-content div.newsletter div.newslatterform form button {
+    width: 20%;
+    min-width: 100px;
+    height: 35px;
+    outline: #114639;
+    border: 1px solid #cacaca;
+    background-color: #114639;
+    color: #fdfdfd;
+    margin-top: 10px;
+
+}
+
+div.main-content div.newsletter div.poster img{
+    display: block;
+}
+
+/* footer */
+footer{
+    width: 100%;
+    background-color: #111;
+    color: #fdfdfd;
+    font-size: .8em;
+    padding:20px 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    gap: 25px;
+    text-align: center;
+}
+footer div.about{
+    text-align: right;
+}
+footer div.about p{
+    line-height: 26px;
+    margin-top: 10px;
+}
+footer h4{
+    font-size: 1.3em;
+    margin:12px 0;
+}
+footer a{
+    display: block;
+    line-height: 26px;
+}
+footer a:hover{
+    color: #149171;
+}
+
+
+/* setting */
+div.main-content div.menu-setting {
+    width: 170px;
+    border-radius: 0 15px 15px 0;
+    background-color: #F3F3F3;
+    position: fixed;
+    top: 10%;
+    left: -170px;
+    z-index: 20;
+    padding: 10px;
+    transition: .5s;
+}
+
+.open-menu-setting {
+    position: fixed;
+    top: 20%;
+    left: 0 !important;
+    box-shadow: 2px 2px 7px 0px #626161;
+}
+
+div.main-content div.menu-setting h4 {
+    font-family: vazir;
+    border-radius: 10px;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    text-align: center;
+    background-color: #1d6655;
+    color: #fff;
+}
+
+div.main-content div.menu-setting p {
+    height: 50px;
+    margin-bottom: 10px;
+    padding: 12px;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #e2e2e2;
+    border-radius: 10px;
+    border: 1px solid #e2e2e2;
+}
+
+div.main-content div.menu-setting span {
+    font-family: yekan;
+    display: block;
+    margin: 30px 0 10px;
+    font-size: 18px;
+}
+
+div.main-content div.menu-setting div.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 0 15px 15px 0;
+    background-color: #f3f3f3;
+    position: fixed;
+    top: 15%;
+    left: 0px;
+    z-index: 20;
+    transition: .5s;
+    cursor: pointer;
+    box-shadow: 2px 2px 4px 0px #626161;
+}
+
+div.main-content div.menu-setting div.icon svg {
+    margin: 5px;
+}
+
+div.main-content div.menu-setting div.mode {
+    height: 50px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    background-color: #e2e2e2;
+    border-radius: 10px;
+    border: 1px solid #e2e2e2;
+}
+
+div.main-content div.menu-setting div.mode i {
+    font-size: 20px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+/* responsive */
+@media screen and (min-width:993px) {
+    header div.slideshow div.nav-md {
+        display: none;
+    }
+
+    .caption-cover {
+        width: 350px !important;
+        position: absolute !important;
+        top: -35px !important;
+        left: 300px !important;
+    }
+}
+
+@media screen and (max-width:992px) {
+    header div.slideshow div.nav {
+        display: none;
+    }
+
+    header div.slideshow div.primary {
+        width: 40%;
+        position: absolute;
+        top: 135px;
+        left: 70px;
+        text-align: center;
+
+    }
+
+    header div.slideshow div.primary h2 {
+        font-size: 2rem;
+        color: #12463a;
+        font-family: iranianSans;
+        line-height: 50px;
+        cursor: pointer;
+    }
+
+    header div.slideshow div.login-cart {
+        width: 0;
+        margin-left: 40px;
+    }
+
+    div.main-content div.nav-bottom-md {
+        display: flex;
+    }
+
+    .caption-cover {
+        width: 350px !important;
+        position: absolute !important;
+        top: -35px !important;
+        left: 185px !important;
+    }
+
+    div.main-content div.product section {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+    div.main-content div.product section div.card {
+        width: 100% !important;
+    }
+
+    div.main-content div.product section div.card a {
+        width: 80%;
+    }
+
+    div.main-content div.advertising div.taking-orders p.title {
+        font-size: 1.3rem;
+        margin: 1rem auto .6rem;
+    }
+
+    div.main-content div.advertising div.taking-orders p.des {
+        font-size: 1rem;
+    }
+
+    div.main-content div.advertising div.taking-orders span {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+
+    div.main-content div.advertising div.taking-orders div.poster {
+        width: 55%;
+    }
+
+    div.main-content div.finely-coffee div.caption-finely-coffee {
+        width: 30%;
+        font-size: 14px;
+    }
+
+    div.main-content div.finely-coffee div.caption-finely-coffee p.title {
+        margin-bottom: 10px;
+    }
+
+    div.main-content div.finely-coffee div.caption-finely-coffee p.des {
+        line-height: 24px;
+        margin-bottom: 15px;
+    }
+
+    div.main-content div.Second-products section {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    div.main-content div.Second-products section div.card {
+        width: 280px !important;
+    }
+    footer{
+        padding-bottom: 80px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    header div.slideshow div.primary {
+        width: 40%;
+        position: absolute;
+        top: 120px;
+        left: 45px;
+        text-align: center;
+
+    }
+
+    .caption-cover {
+        width: 230px !important;
+        position: absolute !important;
+        top: -35px !important;
+        left: 160px !important;
+        font-size: 1.2rem !important;
+    }
+
+    header div.slideshow div.primary h2 {
+        font-size: 1.2rem;
+        color: #12463a;
+        font-family: iranianSans;
+        line-height: 50px;
+        cursor: pointer;
+    }
+
+    div.main-content div.advertising {
+        width: 100%;
+        display: inline-block;
+    }
+
+    div.main-content div.advertising div.taking-orders {
+        width: 100%;
+
+        display: block;
+    }
+
+    div.main-content div.advertising div.taking-orders p.title {
+        margin: 0 auto 1.8rem;
+    }
+
+    div.main-content div.advertising div.taking-orders span {
+        margin: 1.8rem auto;
+
+    }
+
+    div.main-content div.advertising div.taking-orders div.poster {
+        width: 50%;
+        position: relative;
+    }
+
+    div.main-content div.advertising div.find-us {
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+    div.main-content div.finely-coffee {
+        display: inline-block;
+    }
+
+    div.main-content div.finely-coffee div.poster {
+        width: 80%;
+        margin: auto;
+    }
+
+    div.main-content div.finely-coffee div.caption-finely-coffee {
+        width: 80%;
+        margin: 30px auto;
+    }
+
+    div.main-content div.finely-coffee div.caption-finely-coffee p.des {
+        margin-bottom: 15px;
+    }
+
+    div.main-content div.finely-coffee div.caption-finely-coffee button {
+        width: 270px;
+        height: 40px;
+        margin: 7px 0;
+    }
+
+    div.rest div.taking-orders div.icon {
+        position: relative;
+        bottom: 0;
+        margin: 30px 0;
+    }
+    /* newsletter */
+    div.main-content div.newsletter{
+        width: 94%;
+        margin: auto;
+        display: block;
+    }
+    div.main-content div.newsletter div.newslatterform {
+        width: 100%;
+        font-size: 18px;
+        text-align: center;
+        border: 1px solid #114639;
+        margin-bottom: 20px;
+    }
+    div.main-content div.newsletter div.poster{
+        width: 50%;
+        margin: auto;
+    }
+    footer{
+        display: block;
+    }
+    footer div.stores{
+        display: inline-block;
+    }
+    footer div.buy{
+        display: inline-block;
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header div.slideshow div.primary h2 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:576px) {
+    div.main-content div.product section {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    div.main-content div.product section div.card a {
+        width: 50%;
+    }
+
+    div.main-content div.Second-products section {
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    div.main-content div.Second-products section div.card {
+        width: 280px !important;
+    }
+}
+
+@media screen and (max-height:600px){
+    /* setting */
+    div.main-content div.menu-setting {
+        height: 400px;
+        overflow: auto;
+    }
+
+}
+
+/* --------------------------css in js-------------------------- */
+.open-menu {
+    left: 170px !important;
+}
+
+.style-button-night {
+    background-color: #12463a !important;
+    color: #e2ede9 !important;
+    border-radius: 10px !important;
+}
+
+.setContentTheme {
+    background-color: #333 !important;
+    color: #f3f3f3 !important;
+}

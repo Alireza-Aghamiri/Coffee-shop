@@ -1,0 +1,275 @@
+div.main-content {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding-top: 150px;
+}
+
+/* sidebar */
+div.main-content div.sidebar {
+    display: grid;
+    grid-template-columns: 70px 200px;
+    background-color: #323332;
+}
+
+div.main-content div.sidebar div.icon {
+    display: flex;
+    flex-direction: column;
+    background-color: #262626;
+}
+
+div.main-content div.sidebar div.icon i {
+    height: 70px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #f3f3f3;
+    cursor: pointer;
+}
+
+div.main-content div.sidebar div.icon i.selected {
+    background-color: #323332;
+}
+
+div.main-content div.sidebar .sidebar-menu {
+    margin-bottom: 30px;
+}
+
+div.main-content div.sidebar div.nav {
+    display: flex;
+    flex-direction: column;
+    padding-right: 15px;
+}
+
+div.main-content div.sidebar div.nav span {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: #f3f3f3;
+    font-family: vazir;
+    cursor: pointer;
+}
+
+/* main */
+div.main-content div.main {
+    min-height: 505px;
+    padding: 15px;
+    position: relative;
+}
+
+/* order */
+div.main-content div.data {
+    width: 96%;
+    margin: auto;
+    padding-top: 10px;
+    background-color: #fdfdfd;
+    border-radius: 15px;
+    border: 1px solid #000;
+    display: none;
+}
+
+div.main-content div.main div.data form div.submit {
+    margin-bottom: 0;
+}
+
+div.main-content div.data div.close-order {
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+    border-bottom: 1px solid #666;
+    padding-bottom: 10px;
+}
+
+div.main-content div.data div.close-order div.title-order {
+    color: #114639;
+    font-size: 18px;
+    font-family: vazir;
+}
+
+div.main-content div.data div.close-order div.title-order h3 {
+    font-size: 1em;
+}
+
+div.main-content div.data form {
+    width: 100%;
+    text-align: right;
+    padding: 20px;
+    font-size: 18px;
+    font-family: yekan;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+div.main-content div.data form div.input {
+    width: 300px;
+    height: 50px;
+    border: 1px solid #666;
+    display: inline-block;
+    position: relative;
+    padding: 0 10px;
+    margin-bottom: 30px;
+    border-radius: 15px;
+    background-color: #fdfdfd;
+}
+
+div.main-content div.data form div.input label {
+    padding: 0 10px;
+    position: absolute;
+    top: -14px;
+    right: 15px;
+    background-color: #fdfdfd;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+div.main-content div.data form div.input input,
+select {
+    width: 100%;
+    height: 100%;
+    border: none;
+    font-size: 18px;
+    font-family: vazir;
+    outline: none;
+    border-radius: 15px;
+    background-color: #fdfdfd;
+    text-align: center;
+}
+
+div.main-content div.data form div.address {
+    width: 90%;
+    height: 100px;
+}
+
+div.main-content div.data form div.submit {
+    background-color: #114639;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.main-content div.data form div.submit input {
+    background-color: #114639;
+    color: #fff;
+    cursor: pointer;
+}
+
+div.main-content div.data form div.submit a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+/* list Customer */
+div.main-content div.main div.send-box {
+    display: none;
+}
+
+div.main-content div.main div.list-box {
+    display: none;
+}
+
+div.main-content div.main div table {
+    width: 96%;
+    margin: auto;
+    border: 1px solid #666;
+    font-family: yekan;
+    /* border-collapse: collapse; */
+}
+
+div.main-content div.main div table tr>* {
+    border: 1px solid #666;
+    text-align: center;
+    padding: 5px 0;
+}
+
+div.main-content div.main div.list table tr:nth-child(2n) {
+    background-color: #07f6b61e;
+}
+
+div.message {
+    width: 400px;
+    height: 200px;
+    background-color: #faf9f9;
+    border: 1px solid #666;
+    border-radius: 10px;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%, -50%);
+    padding: 15px;
+}
+
+div.message div.close-order {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #666;
+    padding-bottom: 10px;
+}
+
+div.message p {
+    font-size: 16px;
+    font-family: yekan;
+    text-align: right;
+    margin-top: 10px;
+}
+
+div.message button {
+    width: 110px;
+    height: 35px;
+    background-color: #114639;
+    color: #fdfdfd;
+    font-family: vazir;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 10px;
+    right: 50%;
+    transform: translateX(50%);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 992px) {
+    header div.slideshow div.nav {
+        display: flex !important;
+    }
+}
+
+/* ---------------------------css in js--------------------------- */
+.mini-sidebar-menu {
+    grid-template-columns: 1fr 15fr !important;
+}
+
+.show {
+    display: block !important;
+}
+
+.unshow {
+    display: none !important;
+}
+
+div.main-content div.mini-sidebar {
+    display: inline-block !important;
+    width: 70px !important;
+}
+
+table.table-send tr td button {
+    background-color: #114639;
+    color: #fff;
+    text-align: center;
+    padding: 5px 15px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    font-family: yekan;
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="fa-IR" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پنل کاربری</title>
+    <link rel="stylesheet" href="includes/css/account-style.css">
+    <link rel="stylesheet" href="includes/css/style.css">
+    <link rel="stylesheet" href="includes/css/all.css">
+    <script src="includes/js/account-app.js" defer></script>
+    <script src="includes/js/data-app.js" defer></script>
+    <link rel="shortcut icon" href="images/icon/shortcut-icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- menu -->
+        <div class="slideshow">
+            <div class="nav content">
+                <a href="#" class="logo">
+                    <img class="main-logo" src="images/icon/1.svg" alt="logo" width="180px">
+                </a>
+                <div class="menu">
+                    <ul>
+                        <li> <a href="index.html">صفحه اصلی</a></li>
+                        <li> <a href="#">فروشگاه</a></li>
+                        <li> <a href="#">تماس با ما</a></li>
+                        <li> <a href="#">ارتباط باما</a></li>
+                    </ul>
+                </div>
+                <div class="account">
+                    <i class="fa fa-user"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main-content">
+        <div class="sidebar">
+            <div class="icon">
+                <i class="fa fa-sliders sidebar-menu"></i>
+                <i class="fa fa-edit selected order"></i>
+                <i class="fa fa-user-plus registration"></i>
+                <i class="fa fa-gift send"></i>
+                <i class="fa fa-list list"></i>
+            </div>
+            <div class="nav">
+                <span class="sidebar-menu sidebar-menu-name">منوی جمع شونده</span>
+                <span class="order-name">ثبت سفارش</span>
+                <span class="registration-name">ثبت مشتری جدید</span>
+                <span class="send-name">سفارشات</span>
+                <span class="list-name">لیست مشتریان</span>
+            </div>
+        </div>
+        <div class="main">
+            <div class="data order-box show">
+                <form>
+                    <div class="input content">
+                        <label class="content">کد اشتراک</label>
+                        <input class="content code-order" type="number">
+                    </div>
+                    <div class="input content">
+                        <label class="content"> نام</label>
+                        <input id="name-customer" class="content" type="text">
+                    </div>
+                    <div class="input content">
+                        <label class="content">نام خانوادگی</label>
+                        <input id="family-customer" class="content" type="text">
+                    </div>
+                    <div class="input content">
+                        <label class="content">انتخاب قهوه</label>
+                        <select id="prodouct-coffee" class="content">
+                            <option>--</option>
+                            <option>Guatemala Huehuetenango</option>
+                            <option>Kenya Coffee</option>
+                            <option>Colombia Bucaramanga</option>
+                            <option>Brazil Diamond</option>
+                        </select>
+                    </div>
+                    <div class="input content">
+                        <label class="content">شماره تماس</label>
+                        <input id="number-customer" class="content" type="number">
+                    </div>
+                    <div class="input address content">
+                        <label class="content">آدرس</label>
+                        <input id="address-customer" class="content" type="text">
+                    </div>
+                    <div class="input submit content">
+                        <a class="search-customer-order input" href="#">جستجوی مشتری</a>
+                    </div>
+                    <div class="input submit content">
+                        <input class="save-order" type="submit" value="ثبت سفارش">
+                    </div>
+                </form>
+            </div>
+            <div class="data registration-box">
+                <form>
+                    <div class="input">
+                        <label> نام</label>
+                        <input class="name-registration" type="text">
+                    </div>
+                    <div class="input">
+                        <label>نام خانوادگی</label>
+                        <input class="family-registration" type="text">
+                    </div>
+                    <div class="input">
+                        <label>شماره تماس</label>
+                        <input class="number-registration" type="number">
+                    </div>
+                    <div class="input address">
+                        <label>آدرس</label>
+                        <input class="address-registration" type="text">
+                    </div>
+                    <div class="input submit">
+                        <input class="save-registration" type="submit" value="ثبت مشتری">
+                    </div>
+                </form>
+            </div>
+            <div class="send-box">
+                <table class="table-send">
+                    <tr>
+                        <th>ردیف</th>
+                        <th>کد اشتراک</th>
+                        <th>نام</th>
+                        <th>نام خانوادگی</th>
+                        <th>سفارش</th>
+                        <th>وضعیت</th>
+                        <th>تغییر وضعیت</th>
+                    </tr>
+                </table>
+            </div>
+            <div class="list-box">
+                <table class="table-list">
+                    <tr>
+                        <th>ردیف</th>
+                        <th>کد اشتراک</th>
+                        <th>نام</th>
+                        <th>نام خانوادگی</th>
+                        <th>شماره تماس</th>
+                        <th>آدرس</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>1001</td>
+                        <td>علیرضا</td>
+                        <td>آقامیری</td>
+                        <td>09386803608</td>
+                        <td>تهران-تجریش-خ نیاوران-پ208</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="message unshow">
+        <div class="close-order">
+            <div class="title-order content">
+                <h3>اطلاعیه</h3>
+            </div>
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-x-lg cursor"
+                viewBox="0 0 16 16">
+                <path
+                    d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z">
+                </path>
+            </svg>
+        </div>
+        <div class="body">
+            <p></p>
+            <button>تایید</button>
+        </div>
+    </div>
+</body>
+
+</html>

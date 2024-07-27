@@ -1,0 +1,102 @@
+body {
+    background-color: #ecf0f3;
+    position: relative;
+    overflow: hidden;
+}
+
+div.main-content div.login {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.main-content div.login form {
+    border-radius: 20px;
+    padding: 30px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 7px 7px 20px 0px #c9d1ded6, -7px -7px 20px 7px #fff, inset 2px 2px 7px 0 #f3f0f05c;
+    z-index: 10;
+    position: relative;
+}
+
+div.main-content div.login form .input {
+    border: none;
+    border-radius: 40px;
+    outline: none;
+}
+
+div.main-content div.login form input.user-name {
+    width: 300px;
+    height: 40px;
+    padding: 0 20px;
+    margin-bottom: 25px;
+    background-color: #f3f3f3;
+    box-shadow: inset 3px 3px 7px 0px #c9d1ded6, inset -3px -3px 4px 0px #ffff
+}
+
+div.main-content div.login form ::-webkit-input-placeholder {
+    color: #bdbdbd;
+    font-family: vazir-bold;
+}
+
+div.main-content div.login form i {
+    position: absolute;
+    bottom: 235px;
+    left: 30px;
+}
+
+div.main-content div.login form .button {
+    width: 300px;
+    height: 40px;
+    background-color: #1d6655;
+    color: #fdfdfd;
+    font-size: 18px;
+    padding-top:5px ;
+    margin-bottom: 25px;
+    cursor: pointer;
+}
+
+div.main-content div.login form a {
+    text-align: center;
+    width: 300px;
+    color: #727472;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #dad8d8;
+}
+
+div.main-content div.login form .sign-up {
+    width: 200px;
+    height: 40px;
+    color: #5e5e5e;
+    margin-top: 25px;
+    cursor: pointer;
+    box-shadow: 7px 7px 20px 0px #c9d1ded6, -7px -7px 20px 7px #fff, inset 2px 2px 7px 0 #eae8e8;
+}
+
+/* --------------css for javascript------------------ */
+.error {
+    width: 300px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #f2caca;
+    text-align: center;
+    font-family: vazir;
+    font-size: 16px;
+}
+
+.correct {
+    width: 300px;
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #aafdaa9e;
+    text-align: center;
+    font-family: vazir;
+    font-size: 16px;
+}
